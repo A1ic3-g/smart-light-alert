@@ -31,7 +31,7 @@ print("Test email sent")
 # GPIO 
 ldr = gpio.MCP3008(0) # Light Dependant Resistor connected to the MCP3008 Analogue to Digital converter.
 pir = gpio.MotionSensor(4)
-button = gpio.Button(20, pull_up=False)
+button = gpio.Button(26, pull_up=False)
 
 while True: # Infinite loop
     while pir.value == 0 and ldr.voltage < 2: #value of 2V chosen as threshold as when lights on value is typically 1.2V & lights off >3
