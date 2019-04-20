@@ -43,6 +43,6 @@ while True: # Infinite loop
             print(i)
         alert("User, you left your lights on. Turn them off to avoid wasting energy")
 
-    button.wait_for_press(86400) #number is a timeout of 24h in seconds
-    print("The button was pressed. Restarting")
+        button.wait_for_press(86400) #number is a timeout of 24h in seconds
+        print("The button was pressed. Restarting")
 
