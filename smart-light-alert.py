@@ -12,8 +12,8 @@ password = "*" # The email adresses password, blurred out in coursework evidence
 # Creates a secure SSL context
 context = ssl.create_default_context()
 test = "This is an automatic test email sent when booting up your Smart Light Alert system" 
-receiver_email = "*" #user email address
-sender_email = "*" # email made for project
+receiver_email = "*" #user email address using mine for NEA so blurred out
+sender_email = "smart.light.alert@gmail.com" # email made for project
 
 # A function to send email whenever I call it. Email's message is the variable
 # placed in the brackets when the function is called
