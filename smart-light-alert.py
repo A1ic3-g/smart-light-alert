@@ -30,7 +30,7 @@ print("Test email sent")
 
 # GPIO 
 ldr = gpio.MCP3008(0) # Light Dependant Resistor connected to the MCP3008 Analogue to Digital converter.
-pir = gpio.MotionSensor(7)
+pir = gpio.MotionSensor(4)
 button = gpio.Button(20, pull_up=False)
 
 while True: # Infinite loop
