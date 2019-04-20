@@ -34,7 +34,7 @@ pir = gpio.MotionSensor(7)
 button = gpio.Button(20, pull_up=False)
 
 while True: # Infinite loop
-    while pir.value == 0 and ldr.voltage > 2: #value of 2V chosen as threshold as when lights on value is typically 1.2V & lights off 
+    while pir.value == 0 and ldr.voltage < 2: #value of 2V chosen as threshold as when lights on value is typically 1.2V & lights off >3
         print("conditions met")
         print("PIR: ",pir.value, "  LDR: ", ldr.voltage)
         for i in range (1,90):
