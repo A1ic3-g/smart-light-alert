@@ -37,10 +37,8 @@ while True: # Infinite loop
     while pir.value == 0 and ldr.voltage < 2: #value of 2V chosen as threshold as when lights on value is typically 1.2V & lights off >3
         print("conditions met")
         print("PIR: ",pir.value, "  LDR: ", ldr.voltage)
-        for i in range (1,90):
-            print("counting to see if conditions stay the same")
-            sleep(1)
-            print(i)
+        print("counting 90s to see if conditions remain the same")
+        sleep(90)
         alert("User, you left your lights on. Turn them off to avoid wasting energy")
 
         button.wait_for_press(86400) #number is a timeout of 24h in seconds
